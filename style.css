@@ -1,0 +1,119 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #262626;
+}
+.instagram-wrapper {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 65%;
+    column-gap: 1 / 3;
+}
+.instagram-phones {
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    margin: 5px;
+    width: 50%;
+}
+/* Início do login */
+.instagram-login {
+    width: 50%;
+    border: solid 1px;
+}
+.form {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.user {
+    padding: 5px;
+    margin: 5px;
+    width: 250px;
+    height: 35px;
+    border-radius: 10%;
+    background-color: #262626;
+    border-color: #414040;
+    color: white;
+}
+.password {
+    padding: 5px;
+    margin: 5px;
+    width: 250px;
+    height: 35px;
+    border-radius: 10%;
+    background-color: #262626; /* Cor da caixa em si */
+    border-color: #414040; /* Cor da borda */
+    color: white; /* Cor do texto */
+}
+.button {
+    padding: 5px;
+    margin: 5px;
+    width: 250px;
+    height: 35px;
+    border-radius: 10%;
+    font-weight: bold;
+    background-color: rgb(36, 36, 116);
+    color: white;
+}
+/* Final do login */
+
+.others {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 5px;
+    padding: 5px;
+    color: black;
+}
+#instagram-logo {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+.obtain-app {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+}
+.img {
+
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+}
+.img:nth-child(1) {
+    background-image: url("/assets/test.png");
+}
+.img:nth-child(2) {
+    background-image: url("/assets/test.png");
+}
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+@media (max-width:650px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+    .instagram-phones {
+        display: none;
+    }
+}
